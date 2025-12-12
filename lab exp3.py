@@ -1,3 +1,4 @@
+#1st
 lst=[10,20,20,30,80,10,50,89,70]
 
 s=0;[s:=s+x for x in lst]
@@ -17,3 +18,16 @@ print("Max:",mx,"Min:",mn)
 
 u=[x for i,x in enumerate(lst) if x not in lst[:i]]
 print("Unique:",u)
+
+#2nd
+import statistics as s
+
+lst = [10,20,20,30,80,10,50,89,70]
+
+print("mean : ", s.mean(lst))
+print("median : ", s.median(lst))
+print("mode : ", s.mode(lst))
+print("sorted : ", sorted(lst))
+print("unique : ", set(lst))
+print("max : ", max(lst))
+print("min : ", min(lst))
